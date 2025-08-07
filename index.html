@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мемный счётчик — на богатом</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <header>
+    <h1>🧠 Мемный счётчик</h1>
+    <p class="tagline">Сколько секунд ты уже тратишь жизнь на фигню 😎</p>
+  </header>
+
+  <main>
+    <section class="counter">
+      <div class="timer">
+        <div class="num" id="days">0</div>
+        <div class="label">дней</div>
+      </div>
+      <div class="timer">
+        <div class="num" id="hours">00</div>
+        <div class="label">час</div>
+      </div>
+      <div class="timer">
+        <div class="num" id="minutes">00</div>
+        <div class="label">мин</div>
+      </div>
+      <div class="timer">
+        <div class="num" id="seconds">00</div>
+        <div class="label">сек</div>
+      </div>
+    </section>
+
+    <section class="memes">
+      <div id="meme-card">
+        <div id="meme-text">на богатом ✨</div>
+      </div>
+      <button id="next-meme" class="btn">ещё мем</button>
+    </section>
+
+    <section class="standoff">
+      <h2>⏱ Твои часы в Standoff 2</h2>
+      <p>Введи сколько у тебя часов — мы переведём в дни, минуты и секунды. Сохраняется в браузере.</p>
+      <div class="input-row">
+        <input id="st-hours" type="number" min="0" step="1" placeholder="Например: 420" />
+        <button id="save-hours" class="btn">сохранить</button>
+      </div>
+      <div class="results" id="st-results">
+        <div class="card"><span class="label">часы</span><span class="val" id="r-hours">0</span></div>
+        <div class="card"><span class="label">дни</span><span class="val" id="r-days">0</span></div>
+        <div class="card"><span class="label">минуты</span><span class="val" id="r-min">0</span></div>
+        <div class="card"><span class="label">секунды</span><span class="val" id="r-sec">0</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>сделано тобой и ChatGPT — GPT‑5 • без багов, только стиль 💅</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
